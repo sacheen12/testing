@@ -1,6 +1,6 @@
 #!/bin/bash -xe
 set -x
-echo "123456"
+echo "123"
 echo "testing file form GitHub"
 ping -c 4 cisco.com
 df -lh
