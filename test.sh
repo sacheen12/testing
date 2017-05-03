@@ -8,4 +8,3 @@ whoami
 ping -c 4 yahoo.com
 free -g
 date
-pwd
