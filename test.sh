@@ -9,6 +9,3 @@ ping -c 4 yahoo.com
 free -g
 date
 pwd
-
-echo "test from Sacheen12"
-echo "krishnamee2004 deleted a line and added one"
