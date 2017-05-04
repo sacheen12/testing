@@ -10,5 +10,5 @@ free -g
 date
 pwd
 
-echo "krishnamee2004 added this line"
 echo "test from Sacheen12"
+echo "krishnamee2004 deleted a line and added one"
