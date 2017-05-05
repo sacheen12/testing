@@ -19,7 +19,7 @@ node {
     sh 'echo "ghprbPullTitle: " $ghprbPullTitle'
     sh 'echo "ghprbSourceBranch: " $ghprbSourceBranch'
     sh 'echo "ghprbTargetBranch: " $ghprbTargetBranch'
-    sh 'echo "sha1: " $sha1
+    sh 'echo "sha1: " $sha1'
     
     stage 'Test Script'
     sh 'sh test.sh'
