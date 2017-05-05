@@ -13,3 +13,5 @@
     stage('Test Script') {
     sh 'sh test.sh'
     }
+}
+
