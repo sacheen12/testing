@@ -1,7 +1,7 @@
     node {
 
     stage('Clone From Git') {
-    def command = "git clone"
+    def command = "git fetch"
     def proc = command.execute()
     proc.waitFor()              
 
