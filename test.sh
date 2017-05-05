@@ -10,5 +10,3 @@ free -g
 date
 pwd
 echo "123"
-
-echo "234"
