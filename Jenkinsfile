@@ -1,7 +1,7 @@
     node {
 
     stage('Clone From Git') {
-    def command = "git init && git fetch"
+    def command = "git pull origin pull/$CHANGE_ID/head"
     def proc = command.execute()
     proc.waitFor()              
 
@@ -11,8 +11,6 @@
     }
     
     stage('Test Script') {
-    sh 'pwd'
-    sh 'ls -la'
+    sh 'sh test.sh'
     }
-}
 
