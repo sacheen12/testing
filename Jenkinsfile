@@ -1,7 +1,7 @@
-node {
+    node {
 
     stage('Clone From Git') {
-    def command = "git --version"
+    def command = "git pull origin pull/${env.CHANGE_ID}/head"
     def proc = command.execute()
     proc.waitFor()              
 
@@ -9,11 +9,7 @@ node {
     println "Std Err: ${proc.err.text}"
     println "Std Out: ${proc.in.text}" 
     }
-    stage('test') {            
-    println "Std Out: ${env.CHANGE_ID}" 
-    }
     
     stage('Test Script') {
     sh 'sh test.sh'
     }
-}
