@@ -10,7 +10,11 @@ node {
     println "Std Out: ${proc.in.text}" 
     }
     stage('test') {
-    sh 'echo "ghprbPullId: " $ghprbPullId && echo "ghprbPullLink: " $ghprbPullLink'
+    sh 'echo $ghprbPullId && echo $ghprbPullLink'
+    def command = "echo $ghprbPullId && echo $ghprbPullLink"
+    def proc = command.execute()
+    proc.waitFor()              
+    println "Std Out: ${proc.in.text}" 
     }
     
     stage('Test Script') {
