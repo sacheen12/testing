@@ -9,12 +9,8 @@ node {
     println "Std Err: ${proc.err.text}"
     println "Std Out: ${proc.in.text}" 
     }
-    stage('test') {
-    sh 'echo $ghprbPullId && echo $ghprbPullLink'
-    def command = "echo $ghprbPullId && echo $ghprbPullLink"
-    def proc = command.execute()
-    proc.waitFor()              
-    println "Std Out: ${proc.in.text}" 
+    stage('test') {            
+    println "Std Out: ${env.CHANGE_ID}" 
     }
     
     stage('Test Script') {
