@@ -1,7 +1,7 @@
 node {
 
     stage('Clone From Git') {
-    sh 'git pull origin pull/$CHANGE_ID/head'
+    checkout scm
     }
     
     stage('Test Script') {
