@@ -11,7 +11,8 @@
     }
     
     stage('Test Script') {
-    sh 'sh test.sh'
+    sh 'pwd'
+    sh 'll'
     }
 }
 
