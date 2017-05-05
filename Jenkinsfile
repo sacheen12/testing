@@ -12,7 +12,7 @@
     
     stage('Test Script') {
     sh 'pwd'
-    sh 'll'
+    sh 'ls -la'
     }
 }
 
