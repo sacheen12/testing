@@ -1,7 +1,7 @@
     node {
 
     stage('Clone From Git') {
-    def command = "git pull origin pull/${env.CHANGE_ID}/head"
+    def command = "git clone"
     def proc = command.execute()
     proc.waitFor()              
 
