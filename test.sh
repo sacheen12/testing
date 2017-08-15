@@ -1,5 +1,5 @@
-#!/bin/bash -xe
-set -x
+#!/bin/bash
+set +x
 echo "123456"
 echo "testing file form GitHub"
 ping -c 4 cisco.com
