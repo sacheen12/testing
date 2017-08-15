@@ -1,0 +1,22 @@
+version: 0.2
+
+env:
+  variables:
+    sacheen: "Hello How are you"
+
+phases:
+  install:
+    commands:
+      - apt-get update -y
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - sh test.sh
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  discard-paths: yes
